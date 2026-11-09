@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#0f172a;background:#f8fafc;font-synthesis:none;text-rendering:optimizeLegibility}*{box-sizing:border-box}body{margin:0;min-width:320px;min-height:100vh}button,input,select,textarea{font:inherit} .card{background:white;border:1px solid #e2e8f0;border-radius:16px;box-shadow:0 1px 2px #0f172a08} .field{width:100%;border:1px solid #cbd5e1;border-radius:10px;padding:10px 12px;background:white;outline:none}.field:focus{border-color:#2563eb;box-shadow:0 0 0 3px #2563eb20}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:10px;padding:10px 15px;font-weight:600;transition:.15s}.btn-primary{background:#2563eb;color:white}.btn-primary:hover{background:#1d4ed8}.btn-secondary{background:#eff6ff;color:#1d4ed8}.btn-danger{background:#fef2f2;color:#b91c1c}.muted{color:#64748b}.pill{display:inline-flex;border-radius:999px;padding:4px 9px;font-size:12px;font-weight:700;background:#f1f5f9;color:#475569}.status-APPROVED{background:#dcfce7;color:#166534}.status-REJECTED{background:#fee2e2;color:#991b1b}.status-PENDING,.status-UNDER_REVIEW{background:#fef3c7;color:#92400e}.status-CORRECTION_REQUIRED{background:#ffedd5;color:#9a3412}
+
+/* --- additions --- */
+.btn:disabled{opacity:.55;cursor:not-allowed}
+.btn-sm{padding:6px 10px;font-size:13px;border-radius:8px}
+.status-DRAFT{background:#f1f5f9;color:#475569}
+.tab{padding:8px 14px;border-radius:10px;font-weight:600;font-size:14px;color:#64748b}
+.tab:hover{background:#f1f5f9}
+.tab-active{background:#dbeafe;color:#1d4ed8}
+.field:disabled{background:#f1f5f9}
+:focus-visible{outline:2px solid #2563eb;outline-offset:2px}
+.th{padding:14px 16px;text-align:left;font-weight:600;color:#64748b;font-size:13px}
+.td{padding:14px 16px;vertical-align:top}
+
+/* ---------------- Dark mode ----------------
+   Light styles stay as authored; the .dark class on <html> remaps them. */
+html{color-scheme:light}
+html.dark{color-scheme:dark}
+html.dark :root,html.dark{color:#e2e8f0;background:#0b1220}
+.dark body{background:#0b1220;color:#e2e8f0}
+.dark *,.dark ::before,.dark ::after{border-color:#26334a}
+.dark .card{background:#111a2c;border-color:#26334a;box-shadow:none}
+.dark .field{background:#0b1220;border-color:#334155;color:#e2e8f0}
+.dark .field::placeholder{color:#64748b}
+.dark .field:focus{border-color:#60a5fa;box-shadow:0 0 0 3px #60a5fa30}
+.dark .field:disabled{background:#1a2438}
+.dark .btn-primary{background:#2563eb;color:#fff}
+.dark .btn-primary:hover{background:#3b82f6}
+.dark .btn-secondary{background:#1e2c47;color:#93c5fd}
+.dark .btn-secondary:hover{background:#27385a}
+.dark .btn-danger{background:#3b1519;color:#fca5a5}
+.dark .muted{color:#94a3b8}
+.dark .pill{background:#1e293b;color:#cbd5e1}
+.dark .status-APPROVED{background:#12351f;color:#86efac}
+.dark .status-REJECTED{background:#3b1519;color:#fca5a5}
+.dark .status-PENDING,.dark .status-UNDER_REVIEW{background:#3a2c0d;color:#fcd34d}
+.dark .status-CORRECTION_REQUIRED{background:#3b2210;color:#fdba74}
+.dark .status-DRAFT{background:#1e293b;color:#cbd5e1}
+.dark .tab:hover{background:#1a2438}
+.dark .tab-active{background:#1e3a6e;color:#bfdbfe}
+.dark .th{color:#94a3b8}
+.dark :focus-visible{outline-color:#60a5fa}
+.dark ::-webkit-calendar-picker-indicator{filter:invert(.8)}
+
+/* Tailwind utilities used in the app */
+.dark .bg-white{background-color:#111a2c}
+.dark .bg-slate-50,.dark .bg-slate-50\/50{background-color:#0f1829}
+.dark .hover\:bg-slate-50:hover,.dark .hover\:bg-slate-50\/50:hover{background-color:#16223a}
+.dark .hover\:bg-slate-100:hover{background-color:#1a2740}
+.dark .bg-blue-50,.dark .bg-blue-50\/60{background-color:#13264a}
+.dark .bg-red-50{background-color:#3b1519}
+.dark .bg-orange-50{background-color:#3b2210}
+.dark .bg-green-50{background-color:#12351f}
+.dark .bg-amber-50{background-color:#3a2c0d}
+.dark .border-slate-200{border-color:#26334a}
+.dark .border-white{border-color:#111a2c}
+.dark .hover\:border-blue-300:hover{border-color:#3b82f6}
+.dark .text-slate-600{color:#cbd5e1}
+.dark .text-slate-500{color:#94a3b8}
+.dark .text-blue-700{color:#7cb2ff}
+.dark .text-blue-900{color:#bfdbfe}
+.dark .text-red-800{color:#fca5a5}
+.dark .text-green-800{color:#86efac}
+.dark .text-orange-900{color:#fdba74}
+.dark .text-amber-900,.dark .text-amber-700{color:#fcd34d}
+
+/* Recharts draws its own SVG/HTML with inline colours */
+.dark .recharts-text,.dark .recharts-legend-item-text{fill:#cbd5e1}
+.dark .recharts-legend-item-text{color:#cbd5e1!important}
+.dark .recharts-cartesian-axis-line,.dark .recharts-cartesian-axis-tick-line{stroke:#475569}
+.dark .recharts-cartesian-grid line{stroke:#26334a}
+.dark .recharts-default-tooltip{background:#111a2c!important;border-color:#334155!important}
+.dark .recharts-tooltip-cursor{fill:#ffffff10}
+.dark .recharts-pie-sector path,.dark .recharts-sector{stroke:#111a2c}
+
+@media (prefers-reduced-motion:no-preference){body,.card,.field,.btn{transition:background-color .2s,border-color .2s,color .2s}}

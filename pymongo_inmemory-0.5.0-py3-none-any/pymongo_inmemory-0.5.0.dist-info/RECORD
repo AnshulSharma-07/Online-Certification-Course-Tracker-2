@@ -1,0 +1,13 @@
+pymongo_inmemory/__init__.py,sha256=l47dQ0mStowAys7_VEYmr5yK6J7LqHJHX2IO-0D-WnQ,155
+pymongo_inmemory/_pim.py,sha256=Rw5lYW0_P6paDThNQ1goAVwwUPnDe9bHCA2DvJKlG9g,868
+pymongo_inmemory/_utils.py,sha256=odlTV4nWtiXrO_a7Xt72z7u6ie70D5QTIR6A7uY8B48,1177
+pymongo_inmemory/context.py,sha256=bxnGSp9vPe5LMSIHM0RosaGl-puROWNl4rERA4oEAxQ,5846
+pymongo_inmemory/downloader/__init__.py,sha256=8l-CC-LDgrPhqMCPyAoKVISyj5Dp-6NVDWe9o6O-CXg,4016
+pymongo_inmemory/downloader/__main__.py,sha256=NikCB03bm0MKpeg4qNRRv8qfFTwcxhY-L_EyC_T4ZDs,189
+pymongo_inmemory/downloader/_patterns.py,sha256=oRa3EhnHMsbz4FAHmhE4Z1xpEAT91IbgJHSQVLqjYjw,34428
+pymongo_inmemory/downloader/_urls.py,sha256=FmsWQkOO_VJajjKb6lJUiI13kA1WIu-lryzAudMdPr0,2760
+pymongo_inmemory/mongod.py,sha256=MhWj75JEyZXxRzWmIRV98zJGsZaHm_sb1YE42Zn7ZkI,7896
+pymongo_inmemory-0.5.0.dist-info/LICENSE,sha256=0aZkGHv2Gy6XEUSNuWVve-EqW2lE42_6qUo_IV28q7M,1031
+pymongo_inmemory-0.5.0.dist-info/METADATA,sha256=WVfGjQu-be4TqFu29UwkbecjHosuNAHpwKYzbDz4J9c,16081
+pymongo_inmemory-0.5.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+pymongo_inmemory-0.5.0.dist-info/RECORD,,
